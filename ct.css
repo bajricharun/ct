@@ -21,10 +21,38 @@ body{
     background-image: url(./img/background.jpg);
     background-size: cover;
     width: 100%;
+    background-attachment: fixed;
     
     text-align: center;
   
     
+}
+a{
+  scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth;
+}
+nav{
+ margin-right: 4%;
+}
+nav ul{
+  
+  
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  padding: 20px;
+  
+}
+li{
+  color: white;
+  font-size: 25px;
+  vertical-align: middle;
+  margin-top: 1%;
+  
+  
 }
 
 .flex-container {
@@ -46,9 +74,12 @@ body{
     color: white;
     text-align: center;
     vertical-align: middle;
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 20%;
     
+}
+.naslov{
+  font-size: 60px;
 }
 
 .podnaslov{
@@ -57,19 +88,56 @@ body{
 
 .fas {
     font-size: 4vw;
+    color: white;
+    margin-left: 1150%
+}
+.fa-laptop{
+  color: #000;
+  margin: 0;
+}
+.fa-gears{
+  color: #000;
+  margin: 0;
+}
+.fa-server{
+  color: #000;
+  margin: 0;
+}
+.fa-edit{
+  color: #000;
+  margin: 0;
+}
+.fa-laptop-code{
+  color: #000;
+  margin: 0;
+}
+.fa-asterisk{
+  color: #000;
+  margin: 0;
 }
 
 .btn{
     color: white;
     margin-top: 16vh;
+    
 }
 
 .navbar{
-    background-color: yellow;
+    background-color: #24292e;
+    color: white;
     height: 5vw;
     margin-top: 10%;
-    position: sticky;
+    position: fixed;
+    overflow: hidden;
 
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .cardd {
@@ -94,17 +162,21 @@ body{
       
   }
 
+  .fa-laptop::before{
+    margin: 0;;
+    align-items: center;
+  }
 
   .naslov1{
       padding: 40px;
       color: black;
+      text-align: center;
   }
   .bck{
       background-color: white;
   }
   .ct{
       float: left;
-      margin-top: 1.3%;
       font-size: 40px;
       margin-left: 2%;
   }
@@ -162,6 +234,43 @@ body{
 
   .pozadinaa{
       background-color: white;
+  }
+  .naslov20{
+    margin-bottom: 5%;
+
+  }
+  .form{
+    
+   padding: 25px;
+   text-align: center;
+    background-color: white;
+  }
+  .textarea{
+    margin-left: -5%;
+    width:107%;
+    padding: 10%;
+  }
+  button {
+    color: green;
+    background-color:white;
+    
+  }
+  .button{
+    width: 20%;
+  }
+  button :hover{
+    background-color: #0062cc;
+    color: white;
+    
+  }
+  footer{
+    background-color: #24292e;
+    color: white;
+    font-size: 10px ;
+  }
+  .textfooter {
+    font-size: 24px;
+    
   }
   @import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
 
@@ -463,27 +572,84 @@ p, h1 {
 
 .usluge{
     background-color:white ;
+    text-align: center;
 }
-  
+
+span{
+  font-size:15px;
+}
+a{
+text-decoration:none; 
+color: #0062cc;
+
+}
+.box{
+  padding:60px 0px;
+}
+
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  padding:60px 10px;
+  margin:30px 0px;
+}
+.text{
+  margin:20px 0px;
+}
+
+.fa{
+   color:#4183D7;
+}
+
+ 
 
   @media only screen and (max-width:375px ) {
       
 
     .naslov{
-        font-size: 20px;
+        font-size: 50px;
         margin-top: 60%;
     }
     .podnaslov{
-        font-size: 18px;
+        font-size: 22px;
     }
+    h1.ct{
+       margin-left: 3%;
+    }
+    nav{
+      margin-left: 5%;
+     }
+     nav ul{
+       
+       
+       list-style: none;
+     }
+     nav li{
+       display: inline-block;
+       
+       
+     }
+     
+     li{
+       color: white;
+       font-size: 10px;
+       font-weight: 500;
+       vertical-align: middle;
+          }
     .fas {
         font-size: 15vw;
-        margin-top:50% ;
+        margin-right:-200% ;
+        margin: 260%;
+        
+       
+        align-items: center;
+        color: white;
+        background-color: none;
     }
     .navbar{
-        background-color: yellow;
-        height: 10vw;
-        margin-top: 50%;
+        background-color: #24292e;
+        height: 30vw;
+        
         position: sticky;
         text-align: left;
         font-size: 13px;
@@ -493,10 +659,41 @@ p, h1 {
         display: block;
         background:white;
         padding: 20px;
-        
-        
-        
-    }
+    }    
+      .fa-laptop{
+          margin: 0;
+          color: black;
+
+          
+        }
+        .fa-gears{
+          color: black;
+          margin: 0;
+        }
+        .fa-server{
+          color: black;
+          margin: 0;
+        }
+      
+        .fa-edit{
+          color: #000;
+          margin: 0;
+        }
+        .fa-laptop-code{
+          color: #000;
+          margin: 0;
+        }
+        .fa-asterisk{
+          color: #000;
+          margin: 0;
+        }
+        .textfooter {
+          font-size: 15px;
+          align-items: center;
+          
+          
+        }
+    
     .kartice{
         display: block;
         
