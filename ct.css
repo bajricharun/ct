@@ -1,747 +1,671 @@
 @import url('https://fonts.googleapis.com/css?family=Kulim+Park:600&display=swap');
 @font-face {
-    font-family: 'overpass';
-    src: url('overpass-thin.eot'); /* IE9 Compat Modes */
-    src: url('overpass-thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('overpass-thin.woff2') format('woff2'), /* Super Modern Browsers */
-         url('overpass-thin.woff') format('woff'), /* Pretty Modern Browsers */
-         url('overpass-thin.ttf')  format('truetype'); /* Safari, Android, iOS */
-         font-weight: 200;
-         font-style: normal;
+	font-family: 'overpass';
+	src: url('overpass-thin.eot'); /* IE9 Compat Modes */
+	src: url('overpass-thin.eot?#iefix') format('embedded-opentype'), url('overpass-thin.woff2') format('woff2'),
+		url('overpass-thin.woff') format('woff'), url('overpass-thin.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-weight: 200;
+	font-style: normal;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-    background-image: url(./img/background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-attachment: fixed;   
-    text-align: center;  
+body {
+	background-image: url(./img/background.jpg);
+	background-size: cover;
+	width: 100%;
+	background-attachment: fixed;
+	text-align: center;
 }
-a{
-  scroll-behavior: smooth;
+a {
+	scroll-behavior: smooth;
 }
-html{
-  scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
-nav{
- margin-right: 4%;
+nav {
+	margin-right: 4%;
 }
-nav ul{
-  list-style: none;
+nav ul {
+	list-style: none;
 }
-nav li{
-  display: inline-block;
-  padding: 20px;  
+ul:hover {
+	color: yellow;
 }
-li{
-  color: white;
-  font-size: 25px;
-  vertical-align: middle;
-  margin-top: 1%; 
+nav li {
+	display: inline-block;
+	padding: 20px;
+	margin-bottom: 2%;
+}
+li {
+	color: white;
+	font-size: 25px;
+	vertical-align: middle;
+	margin-top: 1%;
 }
 
 .flex-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 .flex-container > div {
-    margin-left: 16%;
+	margin-left: 19%;
 }
 
 .naslov11 {
-    text-align: center;
-    margin-top: 5%;
-    
+	text-align: center;
+	margin-top: 5%;
 }
 
-.naslov{
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 80px;
-    margin-top: 20%;
-    
+.naslov {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 80px;
+	margin-top: 20%;
 }
-.naslov{
-  font-size: 60px;
+.naslov {
+	font-size: 60px;
 }
 
-.podnaslov{
-    font-size: 40px;
+.podnaslov {
+	font-size: 30px;
 }
 
 .fas {
-    font-size: 4vw;
-    color: white;
-    margin-left: 1150%
+	font-size: 4vw;
+	color: white;
+	margin-left: 1150%;
 }
-.fa-laptop{
-  color: #000;
-  margin: 0;
+.fa-laptop {
+	color: #000;
+	margin: 0;
 }
-.fa-gears{
-  color: #000;
-  margin: 0;
+.fa-gears {
+	color: #000;
+	margin: 0;
 }
-.fa-server{
-  color: #000;
-  margin: 0;
+.fa-server {
+	color: #000;
+	margin: 0;
 }
-.fa-edit{
-  color: #000;
-  margin: 0;
+.fa-edit {
+	color: #000;
+	margin: 0;
 }
-.fa-laptop-code{
-  color: #000;
-  margin: 0;
+.fa-laptop-code {
+	color: #000;
+	margin: 0;
 }
-.fa-asterisk{
-  color: #000;
-  margin: 0;
-}
-
-.btn{
-    color: white;
-    margin-top: 16vh;
-    
+.fa-asterisk {
+	color: #000;
+	margin: 0;
 }
 
-.navbar{
-    background-color: #24292e;
-    color: white;
-    height: 5vw;
-    margin-top: 10%;
-    position: fixed;
-    overflow: hidden;
-
+.navbar {
+	background-color: #24292e;
+	color: white;
+	height: 6vw;
+	margin-top: 10%;
+	position: fixed;
+	overflow: hidden;
 }
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 .sticky + .content {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 
 .cardd {
-    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    background-color: white;
-    
-    
-    
-  }
-  .kartice{
-      display: flex;
-      flex-direction: row;
-      background-color: white;
-      
-      
+	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+}
+.kartice {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
 
-      
-      
-      
-  }
+.fa-laptop::before {
+	margin: 0;
+	align-items: center;
+}
 
-  .fa-laptop::before{
-    margin: 0;;
-    align-items: center;
-  }
+.naslov1 {
+	padding: 40px;
+	color: black;
+	text-align: center;
+}
+.bck {
+	background-color: white;
+}
 
-  .naslov1{
-      padding: 40px;
-      color: black;
-      text-align: center;
-  }
-  .bck{
-      background-color: white;
-  }
-  .ct{
-      float: left;
-      font-size: 40px;
-      margin-left: 2%;
-  }
-  i.fas.fa-bars{
-      float: right;
-      font-size: 40px;
-      margin-top: 1.5%;
-      margin-right: 5%;
-  }
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
+.ct {
+	float: left;
+	font-size: 40px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+i.fas.fa-bars {
+	float: right;
+	font-size: 40px;
+	margin-top: 1.5%;
+	margin-right: 5%;
+}
 
-  div.my-2.mx-auto.p-relative.bg-white.shadow-1.blue-hover{
-      margin-top: 10%;
-  }
-  
-  .projekti{
-      
-      color: black;
-      background-color: white;
-      background-size: cover;
-      font-size: 25px;
-      padding: 50px;
-      display: flex;
-      flex-direction: row;
-      
-  }
+.title {
+	color: grey;
+	font-size: 18px;
+}
 
-  .pozadinaa{
-      background-color: white;
-  }
-  .naslov20{
-    margin-bottom: 5%;
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
 
-  }
-  .form{
-    
-   padding: 25px;
-   text-align: center;
-    background-color: white;
-  }
-  .textarea{
-    margin-left: 0.1%;
-    width:35.8%;
-    padding: 10%;
-  }
-  button {
-    color: green;
-    background-color:white;
-    
-  }
-  .button{
-    width: 20%;
-  }
-  button :hover{
-    background-color: #0062cc;
-    color: white;
-    
-  }
-  footer{
-    background-color: #24292e;
-    color: white;
-    font-size: 10px ;
-  }
-  .textfooter {
-    font-size: 24px;
-    
-  }
-  @import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
 
- body {
-   margin: 0;
-   padding: 0;
-   font-size: 16px;
-   line-height: 1.5;
-   text-rendering: optimizeLegibility;
-   font-variant-ligatures: none;
-   box-sizing: border-box;
-   font-family: 'Roboto', sans-serif;
-   background-color: #fafafa;
+button:hover,
+a:hover {
+	opacity: 0.7;
+}
+
+div.my-2.mx-auto.p-relative.bg-white.shadow-1.blue-hover {
+	margin-top: 10%;
+}
+
+.projekti {
+	color: black;
+	background-color: white;
+	background-size: cover;
+	font-size: 25px;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+.pozadinaa {
+	background-color: white;
+}
+.naslov20 {
+	margin-bottom: 5%;
+}
+.form {
+	padding: 25px;
+	text-align: center;
+	background-color: white;
+}
+.textarea {
+	margin-right: 35vh;
+	width: 113%;
+	padding: 10%;
+	height: 17vh;
+}
+.contact1 {
+	width: 36%;
+	height: 2vh;
+	margin-left: 4%;
+}
+.buttonFooter {
+	color: green;
+	background-color: white;
+	border-radius: 80%;
+}
+.button {
+	width: 20%;
+}
+button :hover {
+	background-color: #0062cc;
+	color: white;
+	border-radius: 80%;
+}
+footer {
+	background-color: #24292e;
+	color: white;
+	font-size: 10px;
+}
+.textfooter {
+	font-size: 24px;
+}
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: none;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
 }
 body::before,
 body::after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 body * {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
-p, h1 {
-  margin: 0; padding: 0;
+p,
+h1 {
+	margin: 0;
+	padding: 0;
 }
 
- body, .text-light-black {
-   color: rgba(0,0,0,0.6);
+body,
+.text-light-black {
+	color: rgba(0, 0, 0, 0.6);
 }
 .text-black {
-  color: rgba(0,0,0,0.9);
+	color: rgba(0, 0, 0, 0.9);
 }
 .text-muted {
-  color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
-
-
 
 .text-uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 .ff-serif {
-  font-family: 'Lora', serif;
+	font-family: 'Lora', serif;
 }
 
 .font-weight-normal {
-  font-weight: normal;
+	font-weight: normal;
 }
 .font-weight-medium {
-  font-weight: 500;
+	font-weight: 500;
 }
 
- .lts-1px {
-   letter-spacing: 1px;
+.lts-1px {
+	letter-spacing: 1px;
 }
 .lts-2px {
-  letter-spacing: 2px;
+	letter-spacing: 2px;
 }
 
-
 .w-full {
-  width: 100%;
+	width: 100%;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 .d-block {
-  display: block;
+	display: block;
 }
 .d-inline-block {
-  display: inline-block;
+	display: inline-block;
 }
 
 .p-relative {
-  position: relative;
+	position: relative;
 }
 .p-absolute {
-  position: absolute
+	position: absolute;
 }
-
-
 
 .bg-white {
-  background-color: #fff;
+	background-color: #fff;
 }
-
-
-
 
 .small {
-  font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 .card-heading {
-  font-size: 2.25rem;
+	font-size: 2.25rem;
 }
 .styled-link {
-  text-decoration: none;
-  outline: none;
-  color: #2196fe;
-  transition: all 0.25s ease-in; 
+	text-decoration: none;
+	outline: none;
+	color: #2196fe;
+	transition: all 0.25s ease-in;
 }
 .styled-link:hover,
 .styled-link:focus,
 .styled-link:active {
-  color: #536dfe;
+	color: #536dfe;
 }
 .shadow-1 {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 }
 .blue-hover {
-  transition: all 0.25s ease-in;
-  border-bottom: 5px solid transparent;
+	transition: all 0.25s ease-in;
+	border-bottom: 5px solid transparent;
 }
 .blue-hover:hover {
-  transform: translateY(-5px);
-  border: none;
-  border-bottom: 5px solid #2196fe;
+	transform: translateY(-5px);
+	border: none;
+	border-bottom: 5px solid #2196fe;
 }
-
-
-
 
 .clearfix::before,
 .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .float-left {
-  float: left;
+	float: left;
 }
-.float-right{
-  float: right;
+.float-right {
+	float: right;
 }
-
-
-
-
-
 
 /**Margin and padding utilities*/
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .ml-auto {
-  margin-left: auto;
+	margin-left: auto;
 }
 .mr-auto {
-  margin-right: auto;
+	margin-right: auto;
 }
 .mx-0 {
-  margin-left: 0;
-  margin-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 .mx-1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 .mx-2 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 .mx-3 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
-
 
 .my-0 {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .my-1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .my-2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 .my-3 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 .mt-0 {
-  margin-top: 0;
+	margin-top: 0;
 }
 .mt-1 {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 .mt-2 {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 .mt-3 {
-  margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 .mb-0 {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 .mb-1 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 .mb-2 {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 .mb-3 {
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .ml-0 {
-  margin-left: 0;
+	margin-left: 0;
 }
 .ml-1 {
-  margin-left: 1rem;
+	margin-left: 1rem;
 }
 .ml-2 {
-  margin-left: 2rem;
+	margin-left: 2rem;
 }
 .ml-3 {
-  margin-left: 3rem;
+	margin-left: 3rem;
 }
-
-
-
 
 .px-0 {
-  padding-left: 0;
-  padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 .px-1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 .px-2 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 .px-3 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
-
 
 .py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .py-1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 .py-2 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .py-3 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .pt-0 {
-  padding-top: 0;
+	padding-top: 0;
 }
 .pt-1 {
-  padding-top: 1rem;
+	padding-top: 1rem;
 }
 .pt-2 {
-  padding-top: 2rem;
+	padding-top: 2rem;
 }
 .pt-3 {
-  padding-top: 3rem;
+	padding-top: 3rem;
 }
 
 .pb-0 {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 .pb-1 {
-  padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 .pb-2 {
-  padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 .pb-3 {
-  padding-bottom: 3rem;
-}
-  
-
-.usluge{
-    background-color:white ;
-    text-align: center;
+	padding-bottom: 3rem;
 }
 
-span{
-  font-size:15px;
-}
-a{
-text-decoration:none; 
-color: #0062cc;
-
-}
-.box{
-  padding:60px 0px;
+.usluge {
+	background-color: white;
+	text-align: center;
 }
 
-.box-part{
-  background:#FFF;
-  border-radius:0;
-  padding:60px 10px;
-  margin:30px 0px;
+span {
+	font-size: 15px;
 }
-.text{
-  margin:20px 0px;
+a {
+	text-decoration: none;
+	color: #0062cc;
+}
+.box {
+	padding: 60px 0px;
 }
 
-.fa{
-   color:#4183D7;
+.box-part {
+	background: #fff;
+	border-radius: 0;
+	padding: 60px 10px;
+	margin: 30px 0px;
 }
-input{
-  width: 25%;
-  
+.text {
+	margin: 20px 0px;
 }
-label{
-  width: 70%;
+
+.fa {
+	color: #4183d7;
 }
- 
 
-  @media only screen and (max-width:786px ) {
-      
+@media only screen and (max-width: 786px) {
+	.naslov {
+		font-size: 50px;
+		margin-top: 60%;
+	}
+	.podnaslov {
+		font-size: 22px;
+	}
+	h1.ct {
+		margin-left: 30%;
+	}
+	nav {
+		margin-left: 5%;
+	}
+	nav ul {
+		list-style: none;
+	}
+	nav li {
+		display: inline-block;
+	}
 
-    .naslov{
-        font-size: 50px;
-        margin-top: 60%;
-    }
-    .podnaslov{
-        font-size: 22px;
-    }
-    h1.ct{
-       margin-left: 30%;
-    }
-    nav{
-      margin-left: 5%;
-     }
-     nav ul{
-       
-       
-       list-style: none;
-     }
-     nav li{
-       display: inline-block;
-       
-       
-     }
-     
-     li{
-       color: white;
-       font-size: 10px;
-       font-weight: 500;
-       vertical-align: middle;
-          }
-    .fas {
-        font-size: 15vw;
-        margin-right:-200% ;
-        margin: 260%;
-        
-       
-        align-items: center;
-        color: white;
-        background-color: none;
-    }
-    .navbar{
-        background-color: #24292e;
-        height: 30vw;
-        
-        position: sticky;
-        text-align: left;
-        font-size: 13px;
-        
-    }
-    .card{
-        display: block;
-        background:white;
-        padding: 20px;
-    }    
-      .fa-laptop{
-          margin: 0;
-          color: black;
+	li {
+		color: white;
+		font-size: 10px;
+		font-weight: 500;
+		vertical-align: middle;
+	}
+	.fas {
+		font-size: 15vw;
+		margin-right: -200%;
+		margin: 260%;
 
-          
-        }
-        .fa-gears{
-          color: black;
-          margin: 0;
-        }
-        .fa-server{
-          color: black;
-          margin: 0;
-        }
-      
-        .fa-edit{
-          color: #000;
-          margin: 0;
-        }
-        .fa-laptop-code{
-          color: #000;
-          margin: 0;
-        }
-        .fa-asterisk{
-          color: #000;
-          margin: 0;
-        }
-        .textfooter {
-          font-size: 15px;
-          align-items: center;
-          
-          
-        }
-    
-    .kartice{
-        display: block;
-        
-        
-    }
-    
-    h1.ct{
-        margin-top: -1%;
-        font-size: 24px;
-        margin-top: 1px;
-    }
-    i.fas.fa-bars{
-        float: right;
-        font-size: 20px;
-        margin-top: 1.8%;
-        margin-right: 6%;
-        
-    }
-    .ct{
-        margin-left: 4%;
-        margin-top: 7%;
-    }
-    .projekti{
-        align-items: center;
-        margin-right: 50%;
-    }
+		align-items: center;
+		color: white;
+		background-color: none;
+	}
+	.navbar {
+		background-color: #24292e;
+		height: 30vw;
 
-    .flex-container {
-        width: 100%;
-        display: block;
-    }
-    .flex-container > div {
-        margin-left: -1%;
-    
-    
-  }
-  .form{
-    
-    padding: 25px;
-    text-align: center;
-     background-color: white;
-   }
-   .textarea{
-     margin-left: -7%;
-     width:115%;
-     padding: 10%;
-   }
-   input{
-    width: 80%;
-  }
-  label{
-    width: 70%;
-  }
-   
-  }
+		position: sticky;
+		text-align: left;
+		font-size: 13px;
+	}
+	.card {
+		display: block;
+		background: white;
+		padding: 20px;
+	}
+	.fa-laptop {
+		margin: 0;
+		color: black;
+	}
+	.fa-gears {
+		color: black;
+		margin: 0;
+	}
+	.fa-server {
+		color: black;
+		margin: 0;
+	}
+
+	.fa-edit {
+		color: #000;
+		margin: 0;
+	}
+	.fa-laptop-code {
+		color: #000;
+		margin: 0;
+	}
+	.fa-asterisk {
+		color: #000;
+		margin: 0;
+	}
+	.textfooter {
+		font-size: 15px;
+		align-items: center;
+	}
+
+	.kartice {
+		display: block;
+	}
+
+	h1.ct {
+		margin-top: -1%;
+		font-size: 24px;
+		margin-top: 1px;
+	}
+	i.fas.fa-bars {
+		float: right;
+		font-size: 20px;
+		margin-top: 1.8%;
+		margin-right: 6%;
+	}
+	.ct {
+		margin-left: 4%;
+		margin-top: 7%;
+	}
+	.projekti {
+		align-items: center;
+		margin-right: 50%;
+	}
+
+	.ul {
+		width: 100%;
+		display: block;
+	}
+	.flex-container > div {
+		margin-left: -1%;
+	}
+}
