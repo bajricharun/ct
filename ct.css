@@ -16,7 +16,7 @@
 body {
 	overflow-x: hidden;
 	background-image: url(./img/background.jpg);
-	background-size: cover;
+	background-size: contain;
 	width: 100%;
 	background-attachment: fixed;
 	text-align: center;
