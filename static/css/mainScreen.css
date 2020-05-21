@@ -90,7 +90,7 @@ nav {
     flex-direction: column;
   }
   .logo {
-    height: 30vh;
+    display:none;
   }
   .userName {
     height: max-content;
