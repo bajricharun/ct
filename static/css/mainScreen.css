@@ -89,6 +89,9 @@ nav {
     display: flex;
     flex-direction: column;
   }
+  .userName {
+    height: max-content;
+  }
   * {
    overflow-x: hidden;
  
