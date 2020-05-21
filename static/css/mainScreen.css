@@ -88,9 +88,6 @@ nav {
   align-items: center;
   align-self: center;
 }
-textarea {
-  margin-left:20%;
-}
 @media only screen and (max-width: 700px) {
   .flexed {
     display: flex;
