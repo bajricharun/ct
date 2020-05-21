@@ -7,14 +7,10 @@ body {
   margin-bottom: 0;
   overflow-x: hidden;
 }
-* {
-   overflow-x: hidden;
- 
-}
+
 .container-fluid {
   margin: 0;
   padding: 0;
-    overflow-x: hidden;
 }
 nav {
   font-size: 1.2em;
@@ -93,6 +89,10 @@ nav {
     display: flex;
     flex-direction: column;
   }
+  * {
+   overflow-x: hidden;
+ 
+}
 }
 footer {
   margin-top: 15%;
